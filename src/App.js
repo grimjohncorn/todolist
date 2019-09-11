@@ -50,7 +50,7 @@ const App = () => {
           value={formState.nameInput} 
           onChange={handleChange}>
         </input>
-        <button onClick={onClick}>Add Item</button>
+        <button className='formControl' onClick={onClick}>Add Item</button>
       </form>
       
 

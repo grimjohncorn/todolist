@@ -51,17 +51,17 @@ ul {
 }
 
 #topForm {
+  width: 100%;
+  max-width: 25rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 1rem;
   background-color: red;
 }
 
-.formControl {
-  margin: 1rem;
-}
-
 input {
+  flex: 0 1 auto;
   border: 2px solid black;
   border-radius: 5px;
   font-size: 1.3em;
@@ -71,6 +71,7 @@ input {
 #listContainer {
   width: 100%;
   max-width: 25rem;
+  background-color: blue;
 }
 
 
@@ -134,7 +135,7 @@ form button:hover {
 
 /* --- Media Queries --- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 500px) {
   
   #titleHero {
     width: 100%;
@@ -143,5 +144,6 @@ form button:hover {
 
   #topForm {
     width: 100%;
+    max-width: 100%;
   }
 }
