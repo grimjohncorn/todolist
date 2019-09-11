@@ -41,7 +41,7 @@ const App = () => {
         <div id='backgroundImg' style={{backgroundImage: `url(${backgroundImg})`}}></div>
       </div>
 
-      <form>
+      <form id='topForm'>
         <input
           className='formControl'
           name='nameInput' 

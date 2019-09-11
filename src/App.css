@@ -11,6 +11,11 @@ h3 {
 
 /* --- Layout --- */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -24,11 +29,13 @@ ul {
 }
 
 #titleHero {
+  width: 15rem;
   position: relative;
   padding: 2em;
-  margin: 2em;
+  margin: 2em 0 2em 0;
   border-radius: 5px;
   border: 1px solid grey;
+  text-align: center;
 }
 
 #backgroundImg {
@@ -40,6 +47,14 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.5;
+  z-index: -1;
+}
+
+#topForm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
 }
 
 .formControl {
@@ -115,4 +130,18 @@ form button:hover {
 
 #deleteButton:hover {
   color: white;
+}
+
+/* --- Media Queries --- */
+
+@media only screen and (max-width: 600px) {
+  
+  #titleHero {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  #topForm {
+    width: 100%;
+  }
 }
