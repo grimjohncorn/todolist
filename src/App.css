@@ -8,6 +8,10 @@ h3 {
   margin: 0 0 0 0.5em;
 }
 
+.completedItem h3 {
+  text-decoration: line-through;
+}
+
 
 /* --- Layout --- */
 
@@ -88,10 +92,6 @@ input {
 .completedItem {
   border: 2px solid grey;
   background-color: grey;
-}
-
-.completedItem h3 {
-  text-decoration: line-through;
 }
 
 .notCompletedItem {
